@@ -1,0 +1,50 @@
+{% extends 'portal/base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+
+
+{% block title %}
+Contato | {{ block.super }}{% endblock %}
+
+{% block content %}
+
+<div class="contato">
+         {% if success %}
+        <div class="alert alert-success">
+            Mensagem enviada com sucesso
+        </div>
+        {% endif %}
+            <div class="contato">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <fieldset>
+                        {% for field in form %}
+                    <div class="form-group {% if field.errors %} has-errror{% endif %} mt-3">
+                        <label for="{{ field.auto_id }}" class="col-2 control-label"></label>
+                        <div class="col-md-6 offset-md-3">
+                            {% render_field field class='form-control' %}
+                            {% for error in field.errors %}
+                            <span class="help-block">{{ error }}</span>
+                            {% endfor %}            
+                    </div>
+                        {% endfor %}   
+                              </div>
+                    <div class="form-group">
+                        <div class="col-md-6 offset-md-3">
+                        <button type="submit" class="btn-outline-dark float-right">Enviar</button>
+                    </div>
+                  </div>
+                </fieldset>
+             </form>
+         </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  document.getElementById('contatolink').classList.add('active'); // Adiciona classe
+  document.getElementById('indexlink').classList.remove('active'); // Remove classe
+  document.getElementById('categorialink').classList.remove('active'); // Remove classe
+  document.getElementById('homelink').classList.remove('active'); // Remove classe
+</script>
+{% endblock %}

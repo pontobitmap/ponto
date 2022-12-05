@@ -1,0 +1,10 @@
+/* css variáveis */
+
+:root {
+
+	--Josefin: 'Josefin+Sans', sans-serif;
+	--jua: 'Jua', sans-serif;
+	--amarelo: rgb(240, 139, 6);
+	--grad: linear-gradient(to right top, #c43131, #b03b3b, #973b3b, #793535, #181C24);
+	--vermelhim: rgb(255, 1, 1);
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('variables.css');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+/* #--------------> css index ------------- */
+.logo {
+
+    background: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    margin: auto;
+    min-height: 500px;
+    text-align: center;
+    background-image: url('../images/logo.svg');
+
+}
+
+.div-arrow {
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+    animation: fade 2s ease-in;
+
+}
+
+.menu {
+
+    width: auto;
+    min-height: 300px;
+    animation: fade 4s linear;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.teste {
+
+    background-color: #181C24;
+    border: 1px solid transparent;
+    border-image: var(--grad);
+    border-image-slice: 1;
+
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #ffffff;
+    filter: drop-shadow(0 5mm 5mm rgb(210, 0, 0));
+}
+
+p {
+    font-size: 2rem;
+}
+
+@keyframes fade {
+    0% {
+
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+}
+
+footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    font-family: var(--Josefin) !important;
+    font-size: 1.2rem;
+    background: var(--amarelo) !important;
+}

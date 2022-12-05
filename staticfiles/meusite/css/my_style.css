@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,700i,900,900i&display=swap');
+@import url('variables.css');
+
+.nav-item {
+	font: normal 800 16px var(--lato);
+}
+.fixed-top {
+	height: 85px;
+	box-shadow: 0px 0px 15px 0px rgba(88, 81, 52, 0.3);
+}
+.navbar-expand-lg .navbar-nav {
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.errors {
+	margin-top:100px;
+	display: block;
+	background-color: black;
+	color: rgb(255, 255, 255);
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+	position: relative;
+	opacity: 0.85;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgimg-1 {
+	background-image: url("../images/areia.jpg");
+	min-height: 100%;
+}
+
+.bgimg-2 {
+	background-image: url("../images/ocean.jpg");
+	min-height: 800px;
+}
+
+.bgimg-3 {
+	background-image: url("../images/rocha.jpg");
+	min-height: 800px;
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: rgb(9, 29, 49);
+}
+
+.caption span.border {
+	background-color: rgb(9, 29, 49);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+/* aqui o footer...> */
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:var(--amarelo);
+	color: white;
+	font: normal 400 16px var(--lato);
+	text-align: center;
+}
+.contato {
+	margin-top: 20px;
+	padding: 1rem;
+}
+
+h1 {
+	color: rgb(95, 95, 95);
+	text-align: center;
+}
+
+/* aqui o complementos para imagens...> */
+
+.home,
+.contato,
+.obrigado {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* aqui o home, contato......> */
+.home > h1 {
+	padding-right: 50%;
+	padding-top: 80px;
+	color: rgb(110, 110, 109);
+}
+
+
+.alert {
+	margin-top: 80px;
+	margin-bottom: 0;
+}
+.home {
+	background-image: url('../images/tree.jpg');
+	min-height: 100%;
+}
+.arvore_virada {
+	background-image: url('../images/tree_01.jpg');
+	min-height: 100%;
+}
+.login_btn {
+	width: auto;
+	margin: 0 0 1rem 0;
+	background: var(--amarelo) !important;
+	color: rgb(255, 255, 255) !important;
+}
+.login_btn:focus {
+	box-shadow: navajowhite !important;
+	outline: 1px !important;
+}
+.login_container {
+	padding: 0 2rem;
+}
+
+.input_user,
+.input_pass:focus {
+	box-shadow: none !important;
+	outline: 0px !important;
+}
+	
+.login {
+	padding: 10px;
+}
+#messages{
+	background-color: grey;
+	color: #fff;
+	padding: 10px;
+	margin-top: 10px;
+}
+.list-group-item:first-child {
+	background-color:rgb(224, 184, 3) ;
+}
+
+.breadcrumb {
+	
+	background-color: rgb(224, 184, 3);
+	margin-top: 80px;
+}
+.pagination {
+	padding: 1rem;
+}
+
+.minhaconta {
+	margin: 100px 0 0 0;
+	padding: 10px;
+}
+.dados {
+	background-color: rgba(255, 255, 255, 0.4);
+	margin: 100px 0 0 0;
+	padding: 10px;
+}
+.card-title {
+	margin: 1rem 0 0 0;
+    text-align: center;
+}
+.card-body{
+	padding: 1rem;
+}
+.texto-produto {
+	margin-top: 100px;
+	background-color: rgba(0,0,0,.075);
+}
+.produtos-2 {
+	padding: 1rem;
+}
+.produtos {
+	background-image: url("../images/ocean.jpg");
+	min-height: 100%;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 1rem;
+	
+}
+
+.contato {
+	background-image: url('../images/wood.jpg');
+	min-height: 100%;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	color: #fff;
+	background-color: #8f5406;
+}
+
+a {
+	color: #777;
+}
+
+a:hover {
+	color: rgb(110, 110, 109);
+}
+
+.circular--square {
+	border-bottom-width: thick;
+    border-radius: 50%;
+    border-bottom: solid #ff0019;
+}
+
+.pagination {
+    padding: 1rem;
+    margin: auto;
+}
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 0rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+/* Turn off parallax scrolling for tablets and phones */
+/* pequenas */
+
+@media screen and (max-device-width: 768px) {
+	.bgimg-1,
+	.bgimg-2,
+	.bgimg-3 {
+		background-attachment: scroll;
+	}
+	.footer {
+		font: 16px/1.4 "Lato", sans-serif;
+		text-align: center;
+	}
+	body,
+	html {
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+		font: 16px/1.8 "Lato", sans-serif;
+	}
+	.table-sm td, .table-sm th {
+		padding: 0.3rem;
+	}
+	.table {
+		font: 10px/1.2 "Lato", sans-serif;
+	}
+	.display-4 {
+		font-size: 3.1rem;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+}

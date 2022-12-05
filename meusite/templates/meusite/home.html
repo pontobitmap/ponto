@@ -1,0 +1,19 @@
+{% extends 'portal/base.html' %}
+{% load static %}
+{% block title %} Home | {{ block.super }}{%endblock%}
+
+{% block content %}
+<div class="home">
+    <h1 class="display-4 ml-4">[pontoBitmap]</h1>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  document.getElementById('homelink').classList.add('active'); // Adiciona classe
+  document.getElementById('indexlink').classList.remove('active'); // Remove classe
+  document.getElementById('produtoslink').classList.remove('active'); // Remove classe
+  document.getElementById('categorialink').classList.remove('active'); // Remove classe
+  document.getElementById('contatolink').classList.remove('active'); // Remove classe
+</script>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "admin/base.html" %}
+{% load static %}
+{% block title %}
+pontoBitmap | Administração
+{%endblock%}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">
+    <img src="{% static 'meusite/images/logo.svg' %}" width="32" height="32"> [pontoBitmap]</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
