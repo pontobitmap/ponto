@@ -1,0 +1,6 @@
+# flyctl launch added from .gitignore
+**\.env
+**\*.env
+**\.vscode
+**\.sqlite3
+**\venv
